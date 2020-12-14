@@ -4,24 +4,6 @@ const fs = require("fs");
 const writeFile = require('./lib/WriteToPage');
 const info = [];
 
-// const Manager = require("./lib/Manager");
-// const Engineer = require("./lib/Engineer");
-// const Intern = require("./lib/Intern");
-
-// const path = require("path");
-
-// const OUTPUT_DIR = path.resolve(__dirname, "output")
-// const outputPath = path.join(OUTPUT_DIR, "team.html");
-// const render = require("./src/page-template.js.js");
-// const teamMembers = [];
-// const idArray = [];
-// function appMenu() {
-//   function createManager() {
-//     console.log("Please build your team");
-//     inquirer.prompt([])
-//   }  
-// };
-
 // Start App
 
 const init = (info) => {
@@ -133,5 +115,5 @@ init(info)
   return GenerateHTML(data);
 })
 .then(write => {
-  fs.writeFile(write);
+  writeFile(write);
 });
