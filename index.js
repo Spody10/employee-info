@@ -115,5 +115,5 @@ init(info)
   return GenerateHTML(data);
 })
 .then(write => {
-  fs.writeFile(write);
+  writeFile(write);
 });
