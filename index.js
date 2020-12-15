@@ -60,7 +60,7 @@ const init = (info) => {
     {
       type: 'input',
       name: 'github',
-      message: 'Please enter engineers GitHub link:',
+      message: 'Please enter engineers GitHub username:',
       when: ({role}) => {
         if (role === 'Engineer') {
           return true;
